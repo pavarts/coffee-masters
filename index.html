@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coffee-masters</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <ul class="flex-container">
+            <li><img class="flex-item" src="https://btholt.github.io/complete-intro-to-web-dev-v3/images/coffee_masters_logo.png" alt="coffee_masters_logo" width="30"></li>
+            <li><p class="flex-item">Coffee Masters</p></li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="order-background">
+            <p class="order-label"> ITEMS </p>
+            <div class ="order">
+                <div class="items"> 
+                    <div class="quantity"> 1x </div>
+                    <div class="name-add-on">
+                        <div class="name"> Cappucino </div>
+                        <div class="add-on"> Lite foam</div>
+                    </div>
+                    <div class="cost"> $3.35 </div>
+                </div>
+
+                <div class="items"> 
+                    <div class="quantity"> 1x </div>
+                    <div class="name-add-on">
+                        <div class="name"> Cappucino </div>
+                        <div class="add-on"> Lite milk</div>
+                        <div class="add-on"> Double espresso</div>
+                    </div>
+                    <div class="cost"> $3.85 </div>
+                </div>
+
+                <div class="items"> 
+                    <div class="quantity"> 1x </div>
+                    <div class="name-add-on">
+                        <div class="name"> Croissant </div>
+                        <div class="add-on"> Butter</div>
+                    </div>
+                    <div class="cost"> $3.35 </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="right-container">
+
+            <section class="name-background">
+                <p class="name-label"> NAME </p>
+                <div class ="orderer">
+                    <div class="input">
+                        <label for="orderer-name" class="orderer-name-label">Name for order</label>
+                        <input id="orderer-name" class="standard-input" placeholder="Customer's name" />
+                    </div>
+                </div>
+            </section>
+
+            <section class="payment-background">
+                <p class="payment-label"> PAYMENT </p>
+                <div class ="payment">
+                    <div class="payment-container">
+                        <div class="input">
+                            <label for="card-number" class="card-number-label">Card number</label>
+                            <input id="card-number" class="standard-input" placeholder="0000 0000 0000 0000" />
+                        </div>
+                        <div class="input">
+                            <label for="ccv-number" class="ccv-number-label">CCV</label>
+                            <input id="ccv-number" class="standard-input2" placeholder="XXX" />
+                    </div>
+                    </div>  
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <section class="final-amount">
+        <div class="final-amount-container">
+            <div class="totals">
+                <p id="subtotal"> Subtotal: </p>
+                <p id="tax"> Tax: </p>
+                <p id="total"> Total: </p>
+            </div>
+            <div class="totals-values">
+                <p id="subtotal-value"> $9.65 </p>
+                <p id="tax-value"> $0.82 </p>
+                <p id="total-value"> $10.47 </p>
+            </div>
+    </div>
+    </section>
+
+    <section class="place-order">
+        <button class="place-order-button" type="button" onclick="alert('Order placed!')">Place order</button>
+    </section>
+    
+    
+</body>
+</html>

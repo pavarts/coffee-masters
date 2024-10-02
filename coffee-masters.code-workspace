@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Sushi-pavarts"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "coffee-masters"
+	}
+}
